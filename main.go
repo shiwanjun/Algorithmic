@@ -1,10 +1,14 @@
 package main
 
-import "leetcode/leet/sort"
+import (
+	"leetcode/leet/sorts"
+)
 
 func main() {
 
-	sort.TestQuickSort()
-	sort.TestBubbleSort()
-	sort.TestSelectionSort()
+	// sort.TestQuickSort()
+	//sorts.TestBubbleSort()
+	// sorts.TestSelectionSort()
+	// sorts.TestBucketSort()
+	sorts.TestHeapSort()
 }
