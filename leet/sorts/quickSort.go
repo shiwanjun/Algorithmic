@@ -63,6 +63,24 @@ func quickSort(nums []int) {
 	quickSort(nums[right+1:])
 }
 
+func insterstionSort(nums []int) {
+
+	if len(nums) <= 1 {
+		return
+	}
+
+	for i := 1; i < len(nums); i++ {
+
+		instertValue := nums[i]
+
+		j := i - 1
+		for ; j > 0 && nums[j] > instertValue; j-- {
+			nums[j+1] = nums[j]
+		}
+		nums[j] = instertValue
+	}
+}
+
 //桶排序
 /**
  1.思想桶排序就是把数值按照范围进行划分，把数值依次放入一个个划分的范围内，称之为 桶，然后在桶内进行排序，然后依次输出每个桶的值。
@@ -218,6 +236,11 @@ func TestBubbleSort() {
 func TestSelectionSort() {
 
 	testSort("选择排序", selectionSort)
+}
+
+func TestInstertionSort() {
+
+	testSort("插入排序", insterstionSort)
 }
 
 func TestBucketSort() {

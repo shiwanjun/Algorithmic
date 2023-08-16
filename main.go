@@ -10,5 +10,5 @@ func main() {
 	//sorts.TestBubbleSort()
 	// sorts.TestSelectionSort()
 	// sorts.TestBucketSort()
-	sorts.TestHeapSort()
+	sorts.TestInstertionSort()
 }
