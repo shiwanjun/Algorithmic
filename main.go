@@ -10,5 +10,7 @@ func main() {
 	//sorts.TestBubbleSort()
 	// sorts.TestSelectionSort()
 	// sorts.TestBucketSort()
-	sorts.TestInstertionSort()
+	// sorts.TestInstertionSort()
+	// max.TestMax()
+	sorts.TestMergeSort()
 }
